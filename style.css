@@ -1,4 +1,21 @@
 /* ------------------------- */
+/*        FUENTES    */
+/* ------------------------- */
+@font-face {
+  font-family: 'font-title';
+  src: url('Leander.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'font-text';
+  src: url('OFLGoudyStM.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ------------------------- */
 /*        ESTILO GENERAL     */
 /* ------------------------- */
 
@@ -9,7 +26,11 @@
   text-decoration: none;
   border: none;
   outline: none;
-  font-family: 'Times New Roman', serif;
+  font-family: 'font-text', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'font-title', serif;
 }
 
 html{
@@ -53,6 +74,7 @@ body{
   letter-spacing: 2px;
   font-weight: bold;
   transition: 0.3s;
+  font-family: 'font-title', serif;
 }
 
 .navbar a:hover,
